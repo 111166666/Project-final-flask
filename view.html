@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body style="background-color: #FF1000;;">
+    <title>List</title>
+</head>
+<body>
+
+<h3>Patients Information</h3>
+<table border=5>
+    <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Price</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["name"]}}</td>
+            <td>{{row["Address"]}}</td>
+            <td>{{row["Price"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>
